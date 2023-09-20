@@ -1,37 +1,17 @@
 package entities;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Encurtador {
-    private static final String BASE_URL = "www.encurti.com";
-    private Map<String, String> mapEncurtador;
+    private static final String BASE_URL = "www.encurti.com/";
 
-    public Encurtador(){
-        mapEncurtador = new HashMap<>();
-    }
-    
-    public Map<String, String> getMapEncurtador() {
-        return mapEncurtador;
-    }
     public static String getBaseUrl() {
         return BASE_URL;
     }
 
-
-    private  void addChaveValorEmMapEncurtador(String chave, String valor){
-        mapEncurtador.put(chave,valor);
+    public static String gerarNovaUrl(){
+        return Encurtador.getBaseUrl() + new GenerateRandomSerial().generateSerial();
     }
 
-    private  String concatenarURL(){
-        return BASE_URL + "/" + new GenerateRandomSerial().generateSerial();
-    }
 
-    public String encurtarURL(String originalURL){
-        String novaURL = concatenarURL();
-        addChaveValorEmMapEncurtador(novaURL,originalURL);
-        return novaURL;
-    }
 
 
 
