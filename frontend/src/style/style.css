@@ -1,14 +1,33 @@
-body{
-    display: grid;
-    place-content: center;
-    place-items: center;
-    box-sizing:border-box;
-    height: 100vh;
-    border: 2px solid black;
-    margin: 0px;
-    background-color: blue;
+@import url(./util.css);
+
+body {
+  border: 2px solid black;
+  font-family: sans-serif;
+  background-color: var(--cor-primaria);
+  height: 100vh;
+  display: grid;
+  box-sizing: border-box;
+  margin: 0px;
 }
 
-.corpo{
-    background-color: aqua;
+section {
+  place-self: center center;
+  box-sizing: border-box;
+  width: 37.5rem;
+}
+
+section div {
+  background-color: #fff;
+  display: grid;
+  gap: 2rem;
+}
+
+footer {
+  border: 2px solid whitesmoke;
+  align-self: end;
+}
+
+footer a img {
+  max-width: 2.2rem;
+  margin: 0rem 0.5rem;
 }
