@@ -5,6 +5,5 @@
 - [ ] Definição de armazenamento;
 - [ ] Gerar redirecionamento;
 - [ ] Limitar uso diário;
-- [ ] Personalização de URL;
 - [ ] Gerar interface;
-- [ ] Disponibilizar serviço;
+- [ ] Personalização de URL;
