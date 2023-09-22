@@ -1,33 +1,28 @@
 @import url(./util.css);
 
 body {
-  border: 2px solid black;
   font-family: sans-serif;
   background-color: var(--cor-primaria);
   height: 100vh;
   display: grid;
   box-sizing: border-box;
   margin: 0px;
-}
-
-section {
-  place-self: center center;
-  box-sizing: border-box;
-  width: 37.5rem;
-}
-
-section div {
-  background-color: #fff;
+  padding: 0px;
   display: grid;
-  gap: 2rem;
 }
 
-footer {
-  border: 2px solid whitesmoke;
-  align-self: end;
+main {
+  place-self: center;
 }
 
-footer a img {
-  max-width: 2.2rem;
-  margin: 0rem 0.5rem;
+.container {
+  display: grid;
+  padding: 3rem;
+  margin-top: 3rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 2px solid var(--cor-secundaria);
+}
+.tesste {
+  border: 2px solid var(--cor-secundaria);
 }
