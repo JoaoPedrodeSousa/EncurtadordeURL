@@ -21,8 +21,17 @@ main {
   margin-top: 3rem;
   background-color: #fff;
   border-radius: 0.5rem;
-  border: 2px solid var(--cor-secundaria);
+  border: 0.2rem solid var(--cor-primaria);
+  position: relative;
 }
-.tesste {
-  border: 2px solid var(--cor-secundaria);
+.container::after {
+  content: "";
+  width: 104%;
+  height: 104%;
+  z-index: -1;
+  top: -8px;
+  left: -7px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  position: absolute;
 }
