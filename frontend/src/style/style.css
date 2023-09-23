@@ -1,37 +1,70 @@
 @import url(./util.css);
 
-body {
-  font-family: sans-serif;
-  background-color: var(--cor-primaria);
-  height: 100vh;
-  display: grid;
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  display: grid;
+html {
+  font-family: "Nunito";
 }
 
-main {
+body {
+  background-color: var(--cor-primaria);
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.outter-container {
+  place-self: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  width: 500px;
+  height: 500px;
+}
+
+.inner-container {
+  display: grid;
+  align-items: center;
+  border: 0.18rem solid var(--cor-primaria);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.2rem;
+}
+
+.cabecalho {
   place-self: center;
 }
 
-.container {
-  display: grid;
-  padding: 3rem;
-  margin-top: 3rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  border: 0.2rem solid var(--cor-primaria);
-  position: relative;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1rem;
+  border: 2px solid black;
 }
-.container::after {
-  content: "";
-  width: 104%;
-  height: 104%;
-  z-index: -1;
-  top: -8px;
-  left: -7px;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  position: absolute;
+
+form p,
+input {
+  margin: 0px;
+}
+
+.container-url p {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+input {
+  width: 450px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.btn-url {
+  place-self: center;
+  border: 0px;
+  padding: 0.75rem 0.75rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--cor-primaria);
 }
