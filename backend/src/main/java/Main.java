@@ -1,4 +1,4 @@
-import entities.Encurtador;
+import entities.EncurtadorAleatorio;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ public class Main {
         List<String> list = new ArrayList<>();
 
         for(int i=0; i<50000; i++){
-            String enc = new Encurtador().gerarNovaUrl();
+            String enc = new EncurtadorAleatorio().gerarNovaUrl();
 
             System.out.println(enc);
 
